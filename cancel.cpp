@@ -6,6 +6,8 @@ cancel::cancel(QWidget *parent) :
     ui(new Ui::cancel)
 {
     ui->setupUi(this);
+    this->setStyleSheet("QDialog { background-color: #87CEFA; border: 2px solid #e6e6e6; border-radius: 10px; padding: 10px; }");
+
 }
 
 cancel::~cancel()
