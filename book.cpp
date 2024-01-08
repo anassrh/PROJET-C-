@@ -6,6 +6,13 @@ book::book(QWidget *parent) :
     ui(new Ui::book)
 {
     ui->setupUi(this);
+    // Inside the constructor of your book class
+
+    ui->setupUi(this);
+    this->setStyleSheet("QDialog { background-color: #87CEFA; border: 2px solid #e6e6e6; border-radius: 10px; padding: 10px; }");
+
+
+
 }
 
 book::~book()
@@ -66,3 +73,4 @@ void book::on_btnBook_clicked()
     updateUI();
     emit mysignal();
 }
+
